@@ -5,7 +5,6 @@
     xmlns:MetroChart="clr-namespace:De.TorstenMandelkow.MetroChart;assembly=De.TorstenMandelkow.MetroChart"
     xmlns:Themes="clr-namespace:Xceed.Wpf.Toolkit.Themes;assembly=Xceed.Wpf.Toolkit"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:ee="http://schemas.microsoft.com/expression/2010/effects"
     xmlns:extToolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
     xmlns:local="clr-namespace:StressTesting"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -250,7 +249,7 @@
         <Style x:Key="MyWatermarkTextBoxStyle" TargetType="{x:Type extToolkit:WatermarkTextBox}">
             <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
             <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}" />
-            <Setter Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlNormalBorderKey, TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
+            <Setter Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlNormalBorderKey,                      TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="Padding" Value="3" />
             <Setter Property="AllowDrop" Value="True" />
@@ -327,10 +326,10 @@
                                 <Setter TargetName="PART_WatermarkHost" Property="Visibility" Value="Visible" />
                             </MultiTrigger>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlMouseOverBorderKey, TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlMouseOverBorderKey,                      TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
                             </Trigger>
                             <Trigger Property="IsKeyboardFocusWithin" Value="True">
-                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlSelectedBorderKey, TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
+                                <Setter TargetName="Border" Property="BorderBrush" Value="{DynamicResource {ComponentResourceKey ResourceId=ControlSelectedBorderKey,                      TypeInTargetAssembly={x:Type Themes:ResourceKeys}}}" />
                             </Trigger>
                             <Trigger Property="IsEnabled" Value="False">
                                 <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
